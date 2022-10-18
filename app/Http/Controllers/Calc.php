@@ -23,6 +23,6 @@ class Calc extends Controller
                 break;
         }
 
-        return view('calc.calc', ['val1' => $val1, 'calc' => $calc, 'val2' => $val2, 'result' => $result]);
+        return view('calc.calc', ['result' => $result]);
     }
 }
