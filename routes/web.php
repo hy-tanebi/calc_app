@@ -17,7 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/calcs/{val1}/addition/{val2}', [App\Http\Controllers\MessageController::class, 'add']);
-Route::get('/calcs/{val1}/division/{val2}', [App\Http\Controllers\MessageController::class, 'divi']);
-Route::get('/calcs/{val1}/multiplication/{val2}', [App\Http\Controllers\MessageController::class, 'multi']);
-Route::get('/calcs/{val1}/subtraction/{val2}', [App\Http\Controllers\MessageController::class, 'sub']);
+Route::get('/calcs/{val1}/{calc}/{val2}', [App\Http\Controllers\Calc::class, 'result']);

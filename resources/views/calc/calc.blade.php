@@ -10,7 +10,7 @@
 
 <body>
     <h1>計算アプリ</h1>
-    <h2>{{ $val1 + $val2 }}</h2>
+    <h2>{{ $result }}</h2>
 </body>
 
 </html>
