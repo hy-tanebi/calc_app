@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/calcs/{val1}/{calc}/{val2}', [App\Http\Controllers\Calc::class, 'result']);
